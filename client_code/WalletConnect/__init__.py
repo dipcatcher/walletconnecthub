@@ -6,6 +6,7 @@ from anvil.tables import app_tables
 import anvil.js
 from anvil.js import import_from
 import anvil.server
+import json
 #anvil.js.report_all_exceptions(False, reraise=False)
 createWeb3Modal = import_from("@web3modal/ethers5").createWeb3Modal
 defaultConfig=import_from("@web3modal/ethers5").defaultConfig
@@ -61,12 +62,14 @@ class WalletConnect(WalletConnectTemplate):
     }
     
     self.projectId=properties['project_id']
+    print(properties['chain_ids'])
+    self.chainIds = [int(i) for i in properties['chain_ids']]
     self.refreshModal()
   def refreshModal(self):
     self.default_chain = self.degen
     self.modal = createWeb3Modal({
     "ethersConfig": defaultConfig(self.metadata),
-    "chains": [self.localhost, self.pulsechain],
+    "chains":list(app_tables.wallet_chains.search(chainId=q.any_of(*self.chainIds))),
     "projectId": self.projectId,
     "enableAnalytics": True,
     "defaultChain":self.default_chain })

@@ -5,6 +5,10 @@ properties:
 - {name: icon, type: string, default_value: '', important: true}
 - {name: project_id, type: string, default_value: '', important: true}
 - {name: prop, type: string, default_value: '', important: true}
+- name: chain_ids
+  type: text[]
+  important: true
+  default_value: []
 is_package: true
 events:
 - {name: connect, default_event: true}
