@@ -64,12 +64,14 @@ class WalletConnect(WalletConnectTemplate):
     self.projectId=properties['project_id']
     print(properties['chain_ids'])
     self.chainIds = [int(i) for i in properties['chain_ids']]
+    self.chains =  [dict(r) for r in app_tables.wallet_chains.search(chainId=q.any_of(*self.chainIds))]
+    print(self.chains)
     self.refreshModal()
   def refreshModal(self):
     self.default_chain = self.degen
     self.modal = createWeb3Modal({
     "ethersConfig": defaultConfig(self.metadata),
-    "chains":list(app_tables.wallet_chains.search(chainId=q.any_of(*self.chainIds))),
+    "chains":self.chains,
     "projectId": self.projectId,
     "enableAnalytics": True,
     "defaultChain":self.default_chain })
