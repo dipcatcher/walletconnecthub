@@ -102,6 +102,8 @@ class WalletConnect(WalletConnectTemplate):
     print(self.chainId)
     if c is not None:
       self.link_1.icon = c['logo'].get_url()
+    else:
+      self.link_1.icon = None
     self.raise_event("connect")
     #self.update_signer()
   def button_1_click(self, **event_args):
