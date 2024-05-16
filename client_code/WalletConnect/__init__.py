@@ -31,7 +31,7 @@ class WalletConnect(WalletConnectTemplate):
     self.projectId=properties['project_id']
     self.chainIds = [int(i) for i in properties['chain_ids']]
     self.chains =  [dict(r) for r in app_tables.wallet_chains.search(chainId=q.any_of(*self.chainIds))]
-    self.drop_down_chains.items = [(chain['name'], chain['chainId']) for chain in self.chains]
+    
     
     self.refreshModal()
   def refreshModal(self):
@@ -97,8 +97,9 @@ class WalletConnect(WalletConnectTemplate):
       self.signer = None
       self.provider = None
     c = app_tables.wallet_chains.get(chainId=self.chainId)
-    chain = (c['name'], c['chainId'])
-    self.drop_down_chains.selected_value = chain
+    print(self.chainId)
+    if c is not None:
+      self.link_1.icon = c['logo'].get_url()
     self.raise_event("connect")
     #self.update_signer()
   def button_1_click(self, **event_args):

@@ -253,4 +253,7 @@ db_schema:
     - name: currency
       admin_ui: {width: 200, order: 4}
       type: string
+    - name: logo
+      admin_ui: {width: 200, order: 5}
+      type: media
     title: wallet_chains
