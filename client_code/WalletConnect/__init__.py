@@ -7,6 +7,8 @@ import anvil.js
 from anvil.js import import_from
 import anvil.server
 import json
+from anvil.js.window import ethers
+print(dir(ethers))
 #anvil.js.report_all_exceptions(False, reraise=False)
 createWeb3Modal = import_from("@web3modal/ethers5").createWeb3Modal
 defaultConfig=import_from("@web3modal/ethers5").defaultConfig
@@ -109,5 +111,9 @@ class WalletConnect(WalletConnectTemplate):
   def drop_down_chains_change(self, **event_args):
     """This method is called when an item is selected"""
     a = event_args['sender'].selected_value
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    self.modal.open({"view":"Networks"})
     
 
