@@ -15,11 +15,10 @@ events:
 component: []
 custom_component: true
 components:
-- name: drop_down_chains
+- name: link_1
   properties: {}
-  type: DropDown
-  layout_properties: {grid_position: 'OYLRBB,WKTVIG'}
-  event_bindings: {change: drop_down_chains_change}
+  type: Link
+  layout_properties: {grid_position: 'OYLRBB,ZJOKKG'}
 - type: Button
   properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
     foreground: '', visible: true, text: connect wallet, font_size: null, font: '',
