@@ -19,63 +19,30 @@ class WalletConnect(WalletConnectTemplate):
     self.init_components(**properties)
     self.address=None
     self.provider=None
-    self.mainnet = {
-      "chainId": 1,
-      "name": 'Ethereum',
-      "currency": 'ETH',
-      "explorerUrl": 'https://etherscan.io',
-      "rpcUrl": ethereum_url
-    }
-    self.pulsechain = {
-      "chainId": 369,
-      "name": 'PulseChain',
-      "currency": 'PLS',
-      "explorerUrl": 'https://scan.pulsechain.com',
-      "rpcUrl": pulsechain_url
-    }
-    self.degen = {
-      "chainId": 666666666,
-      "name": 'Degen Chain',
-      "currency": 'DEGEN',
-      "explorerUrl": 'https://explorer.degen.tips',
-      "rpcUrl": "https://rpc.degen.tips"
-    }
-    self.base = {
-      "chainId": 8453,
-      "name": 'Base Mainnet',
-      "currency": 'ETH',
-      "explorerUrl": 'https://basescan.org',
-      "rpcUrl": "https://mainnet.base.org"
-    }
+    
     self.metadata = {
       "name": properties['name'],
       "description": properties['description'],
       "url": anvil.server.get_app_origin(),
       "icons": [properties['icon']]
     }
-    self.localhost = {
-      "chainId": 31337,
-      "name": 'Ethereum',
-      "currency": 'ETH',
-      "explorerUrl": 'https://etherscan.io',
-      "rpcUrl": "http://127.0.0.1:8545/"
-    }
+  
     
     self.projectId=properties['project_id']
-    print(properties['chain_ids'])
     self.chainIds = [int(i) for i in properties['chain_ids']]
     self.chains =  [dict(r) for r in app_tables.wallet_chains.search(chainId=q.any_of(*self.chainIds))]
-    print(self.chains)
+    self.drop_down_chains.items = [(chain['name'], chain['chainId']) for chain in self.chains]
+    
     self.refreshModal()
   def refreshModal(self):
-    self.default_chain = self.degen
+    self.default_chain = self.chains[0]
     self.modal = createWeb3Modal({
     "ethersConfig": defaultConfig(self.metadata),
     "chains":self.chains,
     "projectId": self.projectId,
     "enableAnalytics": True,
     "defaultChain":self.default_chain })
-  
+    
     self.modal.subscribeProvider(self.handleChange)
     
   def establish_connection(self):
@@ -129,11 +96,17 @@ class WalletConnect(WalletConnectTemplate):
     else:
       self.signer = None
       self.provider = None
-    
+    c = app_tables.wallet_chains.get(chainId=self.chainId)
+    chain = (c['name'], c['chainId'])
+    self.drop_down_chains.selected_value = chain
     self.raise_event("connect")
     #self.update_signer()
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.establish_connection()
+
+  def drop_down_chains_change(self, **event_args):
+    """This method is called when an item is selected"""
+    a = event_args['sender'].selected_value
     
 
