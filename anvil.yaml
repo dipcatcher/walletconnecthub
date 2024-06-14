@@ -10,229 +10,271 @@ allow_embedding: false
 name: WalletConnect Hub
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 startup_form: null
-native_deps: {head_html: "<!--\n  JSPM Generator Import Map\n  Edit URL: https://generator.jspm.io/#Y2NhYGBiDs0rySzJSU1hcChPTTLOzU9JzNFPLclILSo2dTDRM9AzY4DwHEz1zPWMAL1jqGM0AA\n\
-    -->\n <script type=\"importmap\">\n{\n  \"imports\": {\n    \"@web3modal/ethers5\"\
-    : \"https://ga.jspm.io/npm:@web3modal/ethers5@4.0.6/dist/esm/exports/index.js\"\
-    ,\n    \"ethers\": \"https://ga.jspm.io/npm:ethers@5.7.2/lib.esm/index.js\"\n\
-    \  },\n  \"scopes\": {\n    \"https://ga.jspm.io/\": {\n      \"#esm/src/hashes/sha2.js\"\
-    : \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/@empty.js\",\n      \"#lib/internal/streams/from.js\"\
-    : \"https://ga.jspm.io/npm:readable-stream@3.6.2/lib/internal/streams/from-browser.js\"\
-    ,\n      \"#lib/internal/streams/stream.js\": \"https://ga.jspm.io/npm:readable-stream@3.6.2/lib/internal/streams/stream-browser.js\"\
-    ,\n      \"@coinbase/wallet-sdk\": \"https://ga.jspm.io/npm:@coinbase/wallet-sdk@3.9.1/dist/index.js\"\
-    ,\n      \"@ethersproject/abi\": \"https://ga.jspm.io/npm:@ethersproject/abi@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/abstract-provider\": \"https://ga.jspm.io/npm:@ethersproject/abstract-provider@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/abstract-signer\": \"https://ga.jspm.io/npm:@ethersproject/abstract-signer@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/address\": \"https://ga.jspm.io/npm:@ethersproject/address@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/base64\": \"https://ga.jspm.io/npm:@ethersproject/base64@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/basex\": \"https://ga.jspm.io/npm:@ethersproject/basex@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/bignumber\": \"https://ga.jspm.io/npm:@ethersproject/bignumber@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/bytes\": \"https://ga.jspm.io/npm:@ethersproject/bytes@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/constants\": \"https://ga.jspm.io/npm:@ethersproject/constants@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/contracts\": \"https://ga.jspm.io/npm:@ethersproject/contracts@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/hash\": \"https://ga.jspm.io/npm:@ethersproject/hash@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/hdnode\": \"https://ga.jspm.io/npm:@ethersproject/hdnode@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/json-wallets\": \"https://ga.jspm.io/npm:@ethersproject/json-wallets@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/keccak256\": \"https://ga.jspm.io/npm:@ethersproject/keccak256@5.7.0/lib/index.js\"\
-    ,\n      \"@ethersproject/logger\": \"https://ga.jspm.io/npm:@ethersproject/logger@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/networks\": \"https://ga.jspm.io/npm:@ethersproject/networks@5.7.1/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/pbkdf2\": \"https://ga.jspm.io/npm:@ethersproject/pbkdf2@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/properties\": \"https://ga.jspm.io/npm:@ethersproject/properties@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/providers\": \"https://ga.jspm.io/npm:@ethersproject/providers@5.7.2/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/random\": \"https://ga.jspm.io/npm:@ethersproject/random@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/rlp\": \"https://ga.jspm.io/npm:@ethersproject/rlp@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/sha2\": \"https://ga.jspm.io/npm:@ethersproject/sha2@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/signing-key\": \"https://ga.jspm.io/npm:@ethersproject/signing-key@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/solidity\": \"https://ga.jspm.io/npm:@ethersproject/solidity@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/strings\": \"https://ga.jspm.io/npm:@ethersproject/strings@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/transactions\": \"https://ga.jspm.io/npm:@ethersproject/transactions@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/units\": \"https://ga.jspm.io/npm:@ethersproject/units@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/wallet\": \"https://ga.jspm.io/npm:@ethersproject/wallet@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/web\": \"https://ga.jspm.io/npm:@ethersproject/web@5.7.1/lib.esm/index.js\"\
-    ,\n      \"@ethersproject/wordlists\": \"https://ga.jspm.io/npm:@ethersproject/wordlists@5.7.0/lib.esm/index.js\"\
-    ,\n      \"@lit/reactive-element\": \"https://ga.jspm.io/npm:@lit/reactive-element@2.0.4/reactive-element.js\"\
-    ,\n      \"@lit/reactive-element/decorators/\": \"https://ga.jspm.io/npm:@lit/reactive-element@2.0.4/decorators/\"\
-    ,\n      \"@metamask/safe-event-emitter\": \"https://ga.jspm.io/npm:@metamask/safe-event-emitter@3.0.0/index.js\"\
-    ,\n      \"@metamask/utils\": \"https://ga.jspm.io/npm:@metamask/utils@5.0.2/dist/index.js\"\
-    ,\n      \"@motionone/animation\": \"https://ga.jspm.io/npm:@motionone/animation@10.17.0/dist/index.es.js\"\
-    ,\n      \"@motionone/dom\": \"https://ga.jspm.io/npm:@motionone/dom@10.17.0/dist/index.es.js\"\
-    ,\n      \"@motionone/easing\": \"https://ga.jspm.io/npm:@motionone/easing@10.17.0/dist/index.es.js\"\
-    ,\n      \"@motionone/generators\": \"https://ga.jspm.io/npm:@motionone/generators@10.17.0/dist/index.es.js\"\
-    ,\n      \"@motionone/types\": \"https://ga.jspm.io/npm:@motionone/types@10.17.0/dist/index.es.js\"\
-    ,\n      \"@motionone/utils\": \"https://ga.jspm.io/npm:@motionone/utils@10.17.0/dist/index.es.js\"\
-    ,\n      \"@stablelib/binary\": \"https://ga.jspm.io/npm:@stablelib/binary@1.0.1/lib/binary.js\"\
-    ,\n      \"@stablelib/chacha\": \"https://ga.jspm.io/npm:@stablelib/chacha@1.0.1/lib/chacha.js\"\
-    ,\n      \"@stablelib/chacha20poly1305\": \"https://ga.jspm.io/npm:@stablelib/chacha20poly1305@1.0.1/lib/chacha20poly1305.js\"\
-    ,\n      \"@stablelib/constant-time\": \"https://ga.jspm.io/npm:@stablelib/constant-time@1.0.1/lib/constant-time.js\"\
-    ,\n      \"@stablelib/ed25519\": \"https://ga.jspm.io/npm:@stablelib/ed25519@1.0.3/lib/ed25519.js\"\
-    ,\n      \"@stablelib/hash\": \"https://ga.jspm.io/npm:@stablelib/hash@1.0.1/lib/hash.js\"\
-    ,\n      \"@stablelib/hkdf\": \"https://ga.jspm.io/npm:@stablelib/hkdf@1.0.1/lib/hkdf.js\"\
-    ,\n      \"@stablelib/hmac\": \"https://ga.jspm.io/npm:@stablelib/hmac@1.0.1/lib/hmac.js\"\
-    ,\n      \"@stablelib/int\": \"https://ga.jspm.io/npm:@stablelib/int@1.0.1/lib/int.js\"\
-    ,\n      \"@stablelib/poly1305\": \"https://ga.jspm.io/npm:@stablelib/poly1305@1.0.1/lib/poly1305.js\"\
-    ,\n      \"@stablelib/random\": \"https://ga.jspm.io/npm:@stablelib/random@1.0.2/lib/random.js\"\
-    ,\n      \"@stablelib/sha256\": \"https://ga.jspm.io/npm:@stablelib/sha256@1.0.1/lib/sha256.js\"\
-    ,\n      \"@stablelib/sha512\": \"https://ga.jspm.io/npm:@stablelib/sha512@1.0.1/lib/sha512.js\"\
-    ,\n      \"@stablelib/wipe\": \"https://ga.jspm.io/npm:@stablelib/wipe@1.0.1/lib/wipe.js\"\
-    ,\n      \"@stablelib/x25519\": \"https://ga.jspm.io/npm:@stablelib/x25519@1.0.3/lib/x25519.js\"\
-    ,\n      \"@walletconnect/core\": \"https://ga.jspm.io/npm:@walletconnect/core@2.11.1/dist/index.es.js\"\
-    ,\n      \"@walletconnect/environment\": \"https://ga.jspm.io/npm:@walletconnect/environment@1.0.1/dist/cjs/index.js\"\
-    ,\n      \"@walletconnect/ethereum-provider\": \"https://ga.jspm.io/npm:@walletconnect/ethereum-provider@2.11.1/dist/index.es.js\"\
-    ,\n      \"@walletconnect/events\": \"https://ga.jspm.io/npm:@walletconnect/events@1.0.1/dist/esm/index.js\"\
-    ,\n      \"@walletconnect/heartbeat\": \"https://ga.jspm.io/npm:@walletconnect/heartbeat@1.2.1/dist/cjs/index.js\"\
-    ,\n      \"@walletconnect/jsonrpc-http-connection\": \"https://ga.jspm.io/npm:@walletconnect/jsonrpc-http-connection@1.0.7/dist/esm/index.js\"\
-    ,\n      \"@walletconnect/jsonrpc-provider\": \"https://ga.jspm.io/npm:@walletconnect/jsonrpc-provider@1.0.13/dist/esm/index.js\"\
-    ,\n      \"@walletconnect/jsonrpc-types\": \"https://ga.jspm.io/npm:@walletconnect/jsonrpc-types@1.0.3/dist/esm/index.js\"\
-    ,\n      \"@walletconnect/jsonrpc-utils\": \"https://ga.jspm.io/npm:@walletconnect/jsonrpc-utils@1.0.8/dist/esm/index.js\"\
-    ,\n      \"@walletconnect/jsonrpc-ws-connection\": \"https://ga.jspm.io/npm:@walletconnect/jsonrpc-ws-connection@1.0.14/dist/index.es.js\"\
-    ,\n      \"@walletconnect/keyvaluestorage\": \"https://ga.jspm.io/npm:@walletconnect/keyvaluestorage@1.1.1/dist/index.es.js\"\
-    ,\n      \"@walletconnect/logger\": \"https://ga.jspm.io/npm:@walletconnect/logger@2.0.1/dist/cjs/index.js\"\
-    ,\n      \"@walletconnect/modal\": \"https://ga.jspm.io/npm:@walletconnect/modal@2.6.2/dist/index.js\"\
-    ,\n      \"@walletconnect/modal-core\": \"https://ga.jspm.io/npm:@walletconnect/modal-core@2.6.2/dist/index.js\"\
-    ,\n      \"@walletconnect/modal-ui\": \"https://ga.jspm.io/npm:@walletconnect/modal-ui@2.6.2/dist/index.js\"\
-    ,\n      \"@walletconnect/relay-api\": \"https://ga.jspm.io/npm:@walletconnect/relay-api@1.0.9/dist/esm/index.js\"\
-    ,\n      \"@walletconnect/relay-auth\": \"https://ga.jspm.io/npm:@walletconnect/relay-auth@1.0.4/dist/esm/index.js\"\
-    ,\n      \"@walletconnect/safe-json\": \"https://ga.jspm.io/npm:@walletconnect/safe-json@1.0.2/dist/esm/index.js\"\
-    ,\n      \"@walletconnect/sign-client\": \"https://ga.jspm.io/npm:@walletconnect/sign-client@2.11.1/dist/index.es.js\"\
-    ,\n      \"@walletconnect/time\": \"https://ga.jspm.io/npm:@walletconnect/time@1.0.2/dist/cjs/index.js\"\
-    ,\n      \"@walletconnect/types\": \"https://ga.jspm.io/npm:@walletconnect/types@2.11.1/dist/index.es.js\"\
-    ,\n      \"@walletconnect/universal-provider\": \"https://ga.jspm.io/npm:@walletconnect/universal-provider@2.11.1/dist/index.es.js\"\
-    ,\n      \"@walletconnect/utils\": \"https://ga.jspm.io/npm:@walletconnect/utils@2.11.1/dist/index.es.js\"\
-    ,\n      \"@walletconnect/window-getters\": \"https://ga.jspm.io/npm:@walletconnect/window-getters@1.0.1/dist/cjs/index.js\"\
-    ,\n      \"@walletconnect/window-metadata\": \"https://ga.jspm.io/npm:@walletconnect/window-metadata@1.0.1/dist/cjs/index.js\"\
-    ,\n      \"@web3modal/common\": \"https://ga.jspm.io/npm:@web3modal/common@4.0.6/dist/esm/index.js\"\
-    ,\n      \"@web3modal/core\": \"https://ga.jspm.io/npm:@web3modal/core@4.0.6/dist/esm/index.js\"\
-    ,\n      \"@web3modal/polyfills\": \"https://ga.jspm.io/npm:@web3modal/polyfills@4.0.6/dist/esm/index.js\"\
-    ,\n      \"@web3modal/scaffold\": \"https://ga.jspm.io/npm:@web3modal/scaffold@4.0.6/dist/esm/index.js\"\
-    ,\n      \"@web3modal/scaffold-utils\": \"https://ga.jspm.io/npm:@web3modal/scaffold-utils@4.0.6/dist/esm/exports/index.js\"\
-    ,\n      \"@web3modal/scaffold-utils/ethers\": \"https://ga.jspm.io/npm:@web3modal/scaffold-utils@4.0.6/dist/esm/exports/ethers.js\"\
-    ,\n      \"@web3modal/ui\": \"https://ga.jspm.io/npm:@web3modal/ui@4.0.6/dist/esm/index.js\"\
-    ,\n      \"@web3modal/wallet\": \"https://ga.jspm.io/npm:@web3modal/wallet@4.0.6/dist/esm/index.js\"\
-    ,\n      \"aes-js\": \"https://ga.jspm.io/npm:aes-js@3.0.0/index.js\",\n     \
-    \ \"async-mutex\": \"https://ga.jspm.io/npm:async-mutex@0.2.6/lib/index.js\",\n\
-    \      \"base64-js\": \"https://ga.jspm.io/npm:base64-js@1.5.1/index.js\",\n \
-    \     \"bech32\": \"https://ga.jspm.io/npm:bech32@1.1.4/index.js\",\n      \"\
-    bn.js\": \"https://ga.jspm.io/npm:bn.js@5.2.1/lib/bn.js\",\n      \"buffer\":\
-    \ \"https://ga.jspm.io/npm:buffer@6.0.3/index.js\",\n      \"clsx\": \"https://ga.jspm.io/npm:clsx@1.2.1/dist/clsx.m.js\"\
-    ,\n      \"cross-fetch\": \"https://ga.jspm.io/npm:cross-fetch@3.1.8/dist/browser-ponyfill.js\"\
-    ,\n      \"crypto\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/crypto.js\"\
-    ,\n      \"dayjs\": \"https://ga.jspm.io/npm:dayjs@1.11.10/dayjs.min.js\",\n \
-    \     \"dayjs/plugin/\": \"https://ga.jspm.io/npm:dayjs@1.11.10/plugin/\",\n \
-    \     \"debug\": \"https://ga.jspm.io/npm:debug@4.3.4/src/browser.js\",\n    \
-    \  \"decode-uri-component\": \"https://ga.jspm.io/npm:decode-uri-component@0.2.2/index.js\"\
-    ,\n      \"destr\": \"https://ga.jspm.io/npm:destr@2.0.3/dist/index.mjs\",\n \
-    \     \"detect-browser\": \"https://ga.jspm.io/npm:detect-browser@5.3.0/es/index.js\"\
-    ,\n      \"dijkstrajs\": \"https://ga.jspm.io/npm:dijkstrajs@1.0.3/dijkstra.js\"\
-    ,\n      \"encode-utf8\": \"https://ga.jspm.io/npm:encode-utf8@1.0.3/index.js\"\
-    ,\n      \"eth-block-tracker\": \"https://ga.jspm.io/npm:eth-block-tracker@7.1.0/dist/index.js\"\
-    ,\n      \"eth-json-rpc-filters/subscriptionManager\": \"https://ga.jspm.io/npm:eth-json-rpc-filters@6.0.1/subscriptionManager.js\"\
-    ,\n      \"eth-query\": \"https://ga.jspm.io/npm:eth-query@2.1.2/index.js\",\n\
-    \      \"eth-rpc-errors\": \"https://ga.jspm.io/npm:eth-rpc-errors@4.0.2/dist/index.js\"\
-    ,\n      \"eventemitter3\": \"https://ga.jspm.io/npm:eventemitter3@5.0.1/index.js\"\
-    ,\n      \"events\": \"https://ga.jspm.io/npm:events@3.3.0/events.js\",\n    \
-    \  \"fast-safe-stringify\": \"https://ga.jspm.io/npm:fast-safe-stringify@2.1.1/index.js\"\
-    ,\n      \"filter-obj\": \"https://ga.jspm.io/npm:filter-obj@1.1.0/index.js\"\
-    ,\n      \"hash.js\": \"https://ga.jspm.io/npm:hash.js@1.1.7/lib/hash.js\",\n\
-    \      \"hey-listen\": \"https://ga.jspm.io/npm:hey-listen@1.0.8/dist/index.js\"\
-    ,\n      \"idb-keyval\": \"https://ga.jspm.io/npm:idb-keyval@6.2.1/dist/index.js\"\
-    ,\n      \"ieee754\": \"https://ga.jspm.io/npm:ieee754@1.2.1/index.js\",\n   \
-    \   \"inherits\": \"https://ga.jspm.io/npm:inherits@2.0.4/inherits_browser.js\"\
-    ,\n      \"isomorphic-unfetch\": \"https://ga.jspm.io/npm:isomorphic-unfetch@3.1.0/browser.js\"\
-    ,\n      \"js-sha3\": \"https://ga.jspm.io/npm:js-sha3@0.8.0/src/sha3.js\",\n\
-    \      \"json-rpc-engine\": \"https://ga.jspm.io/npm:json-rpc-engine@6.1.0/dist/index.js\"\
-    ,\n      \"json-rpc-random-id\": \"https://ga.jspm.io/npm:json-rpc-random-id@1.0.1/index.js\"\
-    ,\n      \"keccak/js\": \"https://ga.jspm.io/npm:keccak@3.0.4/js.js\",\n     \
-    \ \"lit\": \"https://ga.jspm.io/npm:lit@3.1.0/index.js\",\n      \"lit-element/lit-element.js\"\
-    : \"https://ga.jspm.io/npm:lit-element@4.0.4/lit-element.js\",\n      \"lit-html\"\
-    : \"https://ga.jspm.io/npm:lit-html@3.1.2/lit-html.js\",\n      \"lit-html/\"\
-    : \"https://ga.jspm.io/npm:lit-html@3.1.2/\",\n      \"lit/\": \"https://ga.jspm.io/npm:lit@3.1.0/\"\
-    ,\n      \"lodash.isequal\": \"https://ga.jspm.io/npm:lodash.isequal@4.5.0/index.js\"\
-    ,\n      \"lru-cache\": \"https://ga.jspm.io/npm:lru-cache@6.0.0/index.js\",\n\
-    \      \"minimalistic-assert\": \"https://ga.jspm.io/npm:minimalistic-assert@1.0.1/index.js\"\
-    ,\n      \"motion\": \"https://ga.jspm.io/npm:motion@10.16.2/dist/main.es.js\"\
-    ,\n      \"ms\": \"https://ga.jspm.io/npm:ms@2.1.2/index.js\",\n      \"multiformats/basics\"\
-    : \"https://ga.jspm.io/npm:multiformats@9.9.0/esm/src/basics.js\",\n      \"pify\"\
-    : \"https://ga.jspm.io/npm:pify@3.0.0/index.js\",\n      \"pino\": \"https://ga.jspm.io/npm:pino@7.11.0/browser.js\"\
-    ,\n      \"preact\": \"https://ga.jspm.io/npm:preact@10.19.5/dist/preact.module.js\"\
-    ,\n      \"preact/hooks\": \"https://ga.jspm.io/npm:preact@10.19.5/hooks/dist/hooks.module.js\"\
-    ,\n      \"process\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/process-production.js\"\
-    ,\n      \"proxy-compare\": \"https://ga.jspm.io/npm:proxy-compare@2.5.1/dist/index.modern.js\"\
-    ,\n      \"qrcode\": \"https://ga.jspm.io/npm:qrcode@1.5.3/lib/browser.js\",\n\
-    \      \"query-string\": \"https://ga.jspm.io/npm:query-string@7.1.3/index.js\"\
-    ,\n      \"quick-format-unescaped\": \"https://ga.jspm.io/npm:quick-format-unescaped@4.0.4/index.js\"\
-    ,\n      \"react\": \"https://ga.jspm.io/npm:react@18.2.0/index.js\",\n      \"\
-    readable-stream\": \"https://ga.jspm.io/npm:readable-stream@3.6.2/readable-browser.js\"\
-    ,\n      \"safe-buffer\": \"https://ga.jspm.io/npm:safe-buffer@5.2.1/index.js\"\
-    ,\n      \"scrypt-js\": \"https://ga.jspm.io/npm:scrypt-js@3.0.1/scrypt.js\",\n\
-    \      \"semver\": \"https://ga.jspm.io/npm:semver@7.6.0/index.js\",\n      \"\
-    sha.js\": \"https://ga.jspm.io/npm:sha.js@2.4.11/index.js\",\n      \"split-on-first\"\
-    : \"https://ga.jspm.io/npm:split-on-first@1.1.0/index.js\",\n      \"strict-uri-encode\"\
-    : \"https://ga.jspm.io/npm:strict-uri-encode@2.0.0/index.js\",\n      \"string_decoder\"\
-    : \"https://ga.jspm.io/npm:string_decoder@1.3.0/lib/string_decoder.js\",\n   \
-    \   \"superstruct\": \"https://ga.jspm.io/npm:superstruct@1.0.3/dist/index.mjs\"\
-    ,\n      \"tslib\": \"https://ga.jspm.io/npm:tslib@2.6.2/tslib.es6.mjs\",\n  \
-    \    \"uint8arrays\": \"https://ga.jspm.io/npm:uint8arrays@3.1.1/esm/src/index.js\"\
-    ,\n      \"uint8arrays/concat\": \"https://ga.jspm.io/npm:uint8arrays@3.1.1/esm/src/concat.js\"\
-    ,\n      \"uint8arrays/from-string\": \"https://ga.jspm.io/npm:uint8arrays@3.1.1/esm/src/from-string.js\"\
-    ,\n      \"uint8arrays/to-string\": \"https://ga.jspm.io/npm:uint8arrays@3.1.1/esm/src/to-string.js\"\
-    ,\n      \"unfetch\": \"https://ga.jspm.io/npm:unfetch@4.2.0/dist/unfetch.js\"\
-    ,\n      \"unstorage\": \"https://ga.jspm.io/npm:unstorage@1.10.1/dist/index.mjs\"\
-    ,\n      \"use-sync-external-store/shim/index.js\": \"https://ga.jspm.io/npm:use-sync-external-store@1.2.0/shim/index.js\"\
-    ,\n      \"util\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/util.js\"\
-    ,\n      \"util-deprecate\": \"https://ga.jspm.io/npm:util-deprecate@1.0.2/browser.js\"\
-    ,\n      \"valtio/react\": \"https://ga.jspm.io/npm:valtio@1.11.2/esm/react.mjs\"\
-    ,\n      \"valtio/react/utils\": \"https://ga.jspm.io/npm:valtio@1.11.2/esm/react/utils.mjs\"\
-    ,\n      \"valtio/utils\": \"https://ga.jspm.io/npm:valtio@1.11.2/esm/utils.mjs\"\
-    ,\n      \"valtio/vanilla\": \"https://ga.jspm.io/npm:valtio@1.11.2/esm/vanilla.mjs\"\
-    ,\n      \"valtio/vanilla/utils\": \"https://ga.jspm.io/npm:valtio@1.11.2/esm/vanilla/utils.mjs\"\
-    ,\n      \"xtend\": \"https://ga.jspm.io/npm:xtend@4.0.2/immutable.js\",\n   \
-    \   \"yallist\": \"https://ga.jspm.io/npm:yallist@4.0.0/yallist.js\",\n      \"\
-    zod\": \"https://ga.jspm.io/npm:zod@3.22.4/lib/index.mjs\"\n    },\n    \"https://ga.jspm.io/npm:@coinbase/wallet-sdk@3.9.1/_/Cb1FuK7s.js\"\
-    : {\n      \"eventemitter3\": \"https://ga.jspm.io/npm:eventemitter3@5.0.1/index.mjs\"\
-    \n    },\n    \"https://ga.jspm.io/npm:@metamask/safe-event-emitter@2.0.0/\":\
-    \ {\n      \"events\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js\"\
-    \n    },\n    \"https://ga.jspm.io/npm:@metamask/safe-event-emitter@3.0.0/\":\
-    \ {\n      \"events\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js\"\
-    \n    },\n    \"https://ga.jspm.io/npm:@metamask/utils@5.0.2/\": {\n      \"buffer\"\
-    : \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js\"\n   \
-    \ },\n    \"https://ga.jspm.io/npm:@walletconnect/environment@1.0.1/\": {\n  \
-    \    \"tslib\": \"https://ga.jspm.io/npm:tslib@1.14.1/tslib.es6.js\"\n    },\n\
-    \    \"https://ga.jspm.io/npm:@walletconnect/heartbeat@1.2.1/\": {\n      \"events\"\
-    : \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js\",\n  \
-    \    \"tslib\": \"https://ga.jspm.io/npm:tslib@1.14.1/tslib.es6.js\"\n    },\n\
-    \    \"https://ga.jspm.io/npm:@walletconnect/jsonrpc-http-connection@1.0.7/\"\
-    : {\n      \"events\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js\"\
-    \n    },\n    \"https://ga.jspm.io/npm:@walletconnect/jsonrpc-provider@1.0.13/\"\
-    : {\n      \"events\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js\"\
-    \n    },\n    \"https://ga.jspm.io/npm:@walletconnect/logger@2.0.1/\": {\n   \
-    \   \"tslib\": \"https://ga.jspm.io/npm:tslib@1.14.1/tslib.es6.js\"\n    },\n\
-    \    \"https://ga.jspm.io/npm:@walletconnect/modal-ui@2.6.2/\": {\n      \"lit\"\
-    : \"https://ga.jspm.io/npm:lit@2.8.0/index.js\",\n      \"lit-html\": \"https://ga.jspm.io/npm:lit-html@2.8.0/lit-html.js\"\
-    ,\n      \"lit/\": \"https://ga.jspm.io/npm:lit@2.8.0/\"\n    },\n    \"https://ga.jspm.io/npm:@walletconnect/time@1.0.2/\"\
-    : {\n      \"tslib\": \"https://ga.jspm.io/npm:tslib@1.14.1/tslib.es6.js\"\n \
-    \   },\n    \"https://ga.jspm.io/npm:bn.js@5.2.1/\": {\n      \"buffer\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js\"\
-    \n    },\n    \"https://ga.jspm.io/npm:eth-json-rpc-filters@6.0.1/\": {\n    \
-    \  \"pify\": \"https://ga.jspm.io/npm:pify@5.0.0/index.js\"\n    },\n    \"https://ga.jspm.io/npm:eth-json-rpc-filters@6.0.1/_/b5cc7b52.js\"\
-    : {\n      \"async-mutex\": \"https://ga.jspm.io/npm:async-mutex@0.2.6/index.mjs\"\
-    \n    },\n    \"https://ga.jspm.io/npm:json-rpc-engine@6.1.0/\": {\n      \"@metamask/safe-event-emitter\"\
-    : \"https://ga.jspm.io/npm:@metamask/safe-event-emitter@2.0.0/index.js\"\n   \
-    \ },\n    \"https://ga.jspm.io/npm:keccak@3.0.4/\": {\n      \"buffer\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js\"\
-    \n    },\n    \"https://ga.jspm.io/npm:lit-element@3.3.3/\": {\n      \"@lit/reactive-element\"\
-    : \"https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/reactive-element.js\",\n\
-    \      \"lit-html\": \"https://ga.jspm.io/npm:lit-html@2.8.0/lit-html.js\"\n \
-    \   },\n    \"https://ga.jspm.io/npm:lit@2.8.0/\": {\n      \"@lit/reactive-element\"\
-    : \"https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/reactive-element.js\",\n\
-    \      \"@lit/reactive-element/decorators/\": \"https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/decorators/\"\
-    ,\n      \"lit-element/lit-element.js\": \"https://ga.jspm.io/npm:lit-element@3.3.3/lit-element.js\"\
-    ,\n      \"lit-html\": \"https://ga.jspm.io/npm:lit-html@2.8.0/lit-html.js\",\n\
-    \      \"lit-html/\": \"https://ga.jspm.io/npm:lit-html@2.8.0/\"\n    },\n   \
-    \ \"https://ga.jspm.io/npm:readable-stream@3.6.2/\": {\n      \"buffer\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js\"\
-    ,\n      \"events\": \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js\"\
-    \n    },\n    \"https://ga.jspm.io/npm:safe-buffer@5.2.1/\": {\n      \"buffer\"\
-    : \"https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js\"\n   \
-    \ }\n  }\n}\n</script>\n\n<!-- ES Module Shims: Import maps polyfill for older\
-    \ browsers without import maps support (eg Safari 16.3) -->\n<script async src=\"\
-    https://ga.jspm.io/npm:es-module-shims@1.8.3/dist/es-module-shims.js\" crossorigin=\"\
-    anonymous\"></script>\n"}
+native_deps:
+  head_html: |
+    <!--
+      JSPM Generator Import Map
+      Edit URL: https://generator.jspm.io/#Y2NhYGBiDs0rySzJSU1hcChPTTLOzU9JzNFPLclILSo2dTDRM9AzY4DwHEz1zPWMAL1jqGM0AA
+    -->
+     <script type="importmap">
+    {
+      "imports": {
+        "@web3modal/ethers5": "https://ga.jspm.io/npm:@web3modal/ethers5@4.0.6/dist/esm/exports/index.js",
+        "ethers": "https://ga.jspm.io/npm:ethers@5.7.2/lib.esm/index.js"
+      },
+      "scopes": {
+        "https://ga.jspm.io/": {
+          "#esm/src/hashes/sha2.js": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/@empty.js",
+          "#lib/internal/streams/from.js": "https://ga.jspm.io/npm:readable-stream@3.6.2/lib/internal/streams/from-browser.js",
+          "#lib/internal/streams/stream.js": "https://ga.jspm.io/npm:readable-stream@3.6.2/lib/internal/streams/stream-browser.js",
+          "@coinbase/wallet-sdk": "https://ga.jspm.io/npm:@coinbase/wallet-sdk@3.9.1/dist/index.js",
+          "@ethersproject/abi": "https://ga.jspm.io/npm:@ethersproject/abi@5.7.0/lib.esm/index.js",
+          "@ethersproject/abstract-provider": "https://ga.jspm.io/npm:@ethersproject/abstract-provider@5.7.0/lib.esm/index.js",
+          "@ethersproject/abstract-signer": "https://ga.jspm.io/npm:@ethersproject/abstract-signer@5.7.0/lib.esm/index.js",
+          "@ethersproject/address": "https://ga.jspm.io/npm:@ethersproject/address@5.7.0/lib.esm/index.js",
+          "@ethersproject/base64": "https://ga.jspm.io/npm:@ethersproject/base64@5.7.0/lib.esm/index.js",
+          "@ethersproject/basex": "https://ga.jspm.io/npm:@ethersproject/basex@5.7.0/lib.esm/index.js",
+          "@ethersproject/bignumber": "https://ga.jspm.io/npm:@ethersproject/bignumber@5.7.0/lib.esm/index.js",
+          "@ethersproject/bytes": "https://ga.jspm.io/npm:@ethersproject/bytes@5.7.0/lib.esm/index.js",
+          "@ethersproject/constants": "https://ga.jspm.io/npm:@ethersproject/constants@5.7.0/lib.esm/index.js",
+          "@ethersproject/contracts": "https://ga.jspm.io/npm:@ethersproject/contracts@5.7.0/lib.esm/index.js",
+          "@ethersproject/hash": "https://ga.jspm.io/npm:@ethersproject/hash@5.7.0/lib.esm/index.js",
+          "@ethersproject/hdnode": "https://ga.jspm.io/npm:@ethersproject/hdnode@5.7.0/lib.esm/index.js",
+          "@ethersproject/json-wallets": "https://ga.jspm.io/npm:@ethersproject/json-wallets@5.7.0/lib.esm/index.js",
+          "@ethersproject/keccak256": "https://ga.jspm.io/npm:@ethersproject/keccak256@5.7.0/lib/index.js",
+          "@ethersproject/logger": "https://ga.jspm.io/npm:@ethersproject/logger@5.7.0/lib.esm/index.js",
+          "@ethersproject/networks": "https://ga.jspm.io/npm:@ethersproject/networks@5.7.1/lib.esm/index.js",
+          "@ethersproject/pbkdf2": "https://ga.jspm.io/npm:@ethersproject/pbkdf2@5.7.0/lib.esm/index.js",
+          "@ethersproject/properties": "https://ga.jspm.io/npm:@ethersproject/properties@5.7.0/lib.esm/index.js",
+          "@ethersproject/providers": "https://ga.jspm.io/npm:@ethersproject/providers@5.7.2/lib.esm/index.js",
+          "@ethersproject/random": "https://ga.jspm.io/npm:@ethersproject/random@5.7.0/lib.esm/index.js",
+          "@ethersproject/rlp": "https://ga.jspm.io/npm:@ethersproject/rlp@5.7.0/lib.esm/index.js",
+          "@ethersproject/sha2": "https://ga.jspm.io/npm:@ethersproject/sha2@5.7.0/lib.esm/index.js",
+          "@ethersproject/signing-key": "https://ga.jspm.io/npm:@ethersproject/signing-key@5.7.0/lib.esm/index.js",
+          "@ethersproject/solidity": "https://ga.jspm.io/npm:@ethersproject/solidity@5.7.0/lib.esm/index.js",
+          "@ethersproject/strings": "https://ga.jspm.io/npm:@ethersproject/strings@5.7.0/lib.esm/index.js",
+          "@ethersproject/transactions": "https://ga.jspm.io/npm:@ethersproject/transactions@5.7.0/lib.esm/index.js",
+          "@ethersproject/units": "https://ga.jspm.io/npm:@ethersproject/units@5.7.0/lib.esm/index.js",
+          "@ethersproject/wallet": "https://ga.jspm.io/npm:@ethersproject/wallet@5.7.0/lib.esm/index.js",
+          "@ethersproject/web": "https://ga.jspm.io/npm:@ethersproject/web@5.7.1/lib.esm/index.js",
+          "@ethersproject/wordlists": "https://ga.jspm.io/npm:@ethersproject/wordlists@5.7.0/lib.esm/index.js",
+          "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@2.0.4/reactive-element.js",
+          "@lit/reactive-element/decorators/": "https://ga.jspm.io/npm:@lit/reactive-element@2.0.4/decorators/",
+          "@metamask/safe-event-emitter": "https://ga.jspm.io/npm:@metamask/safe-event-emitter@3.0.0/index.js",
+          "@metamask/utils": "https://ga.jspm.io/npm:@metamask/utils@5.0.2/dist/index.js",
+          "@motionone/animation": "https://ga.jspm.io/npm:@motionone/animation@10.17.0/dist/index.es.js",
+          "@motionone/dom": "https://ga.jspm.io/npm:@motionone/dom@10.17.0/dist/index.es.js",
+          "@motionone/easing": "https://ga.jspm.io/npm:@motionone/easing@10.17.0/dist/index.es.js",
+          "@motionone/generators": "https://ga.jspm.io/npm:@motionone/generators@10.17.0/dist/index.es.js",
+          "@motionone/types": "https://ga.jspm.io/npm:@motionone/types@10.17.0/dist/index.es.js",
+          "@motionone/utils": "https://ga.jspm.io/npm:@motionone/utils@10.17.0/dist/index.es.js",
+          "@stablelib/binary": "https://ga.jspm.io/npm:@stablelib/binary@1.0.1/lib/binary.js",
+          "@stablelib/chacha": "https://ga.jspm.io/npm:@stablelib/chacha@1.0.1/lib/chacha.js",
+          "@stablelib/chacha20poly1305": "https://ga.jspm.io/npm:@stablelib/chacha20poly1305@1.0.1/lib/chacha20poly1305.js",
+          "@stablelib/constant-time": "https://ga.jspm.io/npm:@stablelib/constant-time@1.0.1/lib/constant-time.js",
+          "@stablelib/ed25519": "https://ga.jspm.io/npm:@stablelib/ed25519@1.0.3/lib/ed25519.js",
+          "@stablelib/hash": "https://ga.jspm.io/npm:@stablelib/hash@1.0.1/lib/hash.js",
+          "@stablelib/hkdf": "https://ga.jspm.io/npm:@stablelib/hkdf@1.0.1/lib/hkdf.js",
+          "@stablelib/hmac": "https://ga.jspm.io/npm:@stablelib/hmac@1.0.1/lib/hmac.js",
+          "@stablelib/int": "https://ga.jspm.io/npm:@stablelib/int@1.0.1/lib/int.js",
+          "@stablelib/poly1305": "https://ga.jspm.io/npm:@stablelib/poly1305@1.0.1/lib/poly1305.js",
+          "@stablelib/random": "https://ga.jspm.io/npm:@stablelib/random@1.0.2/lib/random.js",
+          "@stablelib/sha256": "https://ga.jspm.io/npm:@stablelib/sha256@1.0.1/lib/sha256.js",
+          "@stablelib/sha512": "https://ga.jspm.io/npm:@stablelib/sha512@1.0.1/lib/sha512.js",
+          "@stablelib/wipe": "https://ga.jspm.io/npm:@stablelib/wipe@1.0.1/lib/wipe.js",
+          "@stablelib/x25519": "https://ga.jspm.io/npm:@stablelib/x25519@1.0.3/lib/x25519.js",
+          "@walletconnect/core": "https://ga.jspm.io/npm:@walletconnect/core@2.11.1/dist/index.es.js",
+          "@walletconnect/environment": "https://ga.jspm.io/npm:@walletconnect/environment@1.0.1/dist/cjs/index.js",
+          "@walletconnect/ethereum-provider": "https://ga.jspm.io/npm:@walletconnect/ethereum-provider@2.11.1/dist/index.es.js",
+          "@walletconnect/events": "https://ga.jspm.io/npm:@walletconnect/events@1.0.1/dist/esm/index.js",
+          "@walletconnect/heartbeat": "https://ga.jspm.io/npm:@walletconnect/heartbeat@1.2.1/dist/cjs/index.js",
+          "@walletconnect/jsonrpc-http-connection": "https://ga.jspm.io/npm:@walletconnect/jsonrpc-http-connection@1.0.7/dist/esm/index.js",
+          "@walletconnect/jsonrpc-provider": "https://ga.jspm.io/npm:@walletconnect/jsonrpc-provider@1.0.13/dist/esm/index.js",
+          "@walletconnect/jsonrpc-types": "https://ga.jspm.io/npm:@walletconnect/jsonrpc-types@1.0.3/dist/esm/index.js",
+          "@walletconnect/jsonrpc-utils": "https://ga.jspm.io/npm:@walletconnect/jsonrpc-utils@1.0.8/dist/esm/index.js",
+          "@walletconnect/jsonrpc-ws-connection": "https://ga.jspm.io/npm:@walletconnect/jsonrpc-ws-connection@1.0.14/dist/index.es.js",
+          "@walletconnect/keyvaluestorage": "https://ga.jspm.io/npm:@walletconnect/keyvaluestorage@1.1.1/dist/index.es.js",
+          "@walletconnect/logger": "https://ga.jspm.io/npm:@walletconnect/logger@2.0.1/dist/cjs/index.js",
+          "@walletconnect/modal": "https://ga.jspm.io/npm:@walletconnect/modal@2.6.2/dist/index.js",
+          "@walletconnect/modal-core": "https://ga.jspm.io/npm:@walletconnect/modal-core@2.6.2/dist/index.js",
+          "@walletconnect/modal-ui": "https://ga.jspm.io/npm:@walletconnect/modal-ui@2.6.2/dist/index.js",
+          "@walletconnect/relay-api": "https://ga.jspm.io/npm:@walletconnect/relay-api@1.0.9/dist/esm/index.js",
+          "@walletconnect/relay-auth": "https://ga.jspm.io/npm:@walletconnect/relay-auth@1.0.4/dist/esm/index.js",
+          "@walletconnect/safe-json": "https://ga.jspm.io/npm:@walletconnect/safe-json@1.0.2/dist/esm/index.js",
+          "@walletconnect/sign-client": "https://ga.jspm.io/npm:@walletconnect/sign-client@2.11.1/dist/index.es.js",
+          "@walletconnect/time": "https://ga.jspm.io/npm:@walletconnect/time@1.0.2/dist/cjs/index.js",
+          "@walletconnect/types": "https://ga.jspm.io/npm:@walletconnect/types@2.11.1/dist/index.es.js",
+          "@walletconnect/universal-provider": "https://ga.jspm.io/npm:@walletconnect/universal-provider@2.11.1/dist/index.es.js",
+          "@walletconnect/utils": "https://ga.jspm.io/npm:@walletconnect/utils@2.11.1/dist/index.es.js",
+          "@walletconnect/window-getters": "https://ga.jspm.io/npm:@walletconnect/window-getters@1.0.1/dist/cjs/index.js",
+          "@walletconnect/window-metadata": "https://ga.jspm.io/npm:@walletconnect/window-metadata@1.0.1/dist/cjs/index.js",
+          "@web3modal/common": "https://ga.jspm.io/npm:@web3modal/common@4.0.6/dist/esm/index.js",
+          "@web3modal/core": "https://ga.jspm.io/npm:@web3modal/core@4.0.6/dist/esm/index.js",
+          "@web3modal/polyfills": "https://ga.jspm.io/npm:@web3modal/polyfills@4.0.6/dist/esm/index.js",
+          "@web3modal/scaffold": "https://ga.jspm.io/npm:@web3modal/scaffold@4.0.6/dist/esm/index.js",
+          "@web3modal/scaffold-utils": "https://ga.jspm.io/npm:@web3modal/scaffold-utils@4.0.6/dist/esm/exports/index.js",
+          "@web3modal/scaffold-utils/ethers": "https://ga.jspm.io/npm:@web3modal/scaffold-utils@4.0.6/dist/esm/exports/ethers.js",
+          "@web3modal/ui": "https://ga.jspm.io/npm:@web3modal/ui@4.0.6/dist/esm/index.js",
+          "@web3modal/wallet": "https://ga.jspm.io/npm:@web3modal/wallet@4.0.6/dist/esm/index.js",
+          "aes-js": "https://ga.jspm.io/npm:aes-js@3.0.0/index.js",
+          "async-mutex": "https://ga.jspm.io/npm:async-mutex@0.2.6/lib/index.js",
+          "base64-js": "https://ga.jspm.io/npm:base64-js@1.5.1/index.js",
+          "bech32": "https://ga.jspm.io/npm:bech32@1.1.4/index.js",
+          "bn.js": "https://ga.jspm.io/npm:bn.js@5.2.1/lib/bn.js",
+          "buffer": "https://ga.jspm.io/npm:buffer@6.0.3/index.js",
+          "clsx": "https://ga.jspm.io/npm:clsx@1.2.1/dist/clsx.m.js",
+          "cross-fetch": "https://ga.jspm.io/npm:cross-fetch@3.1.8/dist/browser-ponyfill.js",
+          "crypto": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/crypto.js",
+          "dayjs": "https://ga.jspm.io/npm:dayjs@1.11.10/dayjs.min.js",
+          "dayjs/plugin/": "https://ga.jspm.io/npm:dayjs@1.11.10/plugin/",
+          "debug": "https://ga.jspm.io/npm:debug@4.3.4/src/browser.js",
+          "decode-uri-component": "https://ga.jspm.io/npm:decode-uri-component@0.2.2/index.js",
+          "destr": "https://ga.jspm.io/npm:destr@2.0.3/dist/index.mjs",
+          "detect-browser": "https://ga.jspm.io/npm:detect-browser@5.3.0/es/index.js",
+          "dijkstrajs": "https://ga.jspm.io/npm:dijkstrajs@1.0.3/dijkstra.js",
+          "encode-utf8": "https://ga.jspm.io/npm:encode-utf8@1.0.3/index.js",
+          "eth-block-tracker": "https://ga.jspm.io/npm:eth-block-tracker@7.1.0/dist/index.js",
+          "eth-json-rpc-filters/subscriptionManager": "https://ga.jspm.io/npm:eth-json-rpc-filters@6.0.1/subscriptionManager.js",
+          "eth-query": "https://ga.jspm.io/npm:eth-query@2.1.2/index.js",
+          "eth-rpc-errors": "https://ga.jspm.io/npm:eth-rpc-errors@4.0.2/dist/index.js",
+          "eventemitter3": "https://ga.jspm.io/npm:eventemitter3@5.0.1/index.js",
+          "events": "https://ga.jspm.io/npm:events@3.3.0/events.js",
+          "fast-safe-stringify": "https://ga.jspm.io/npm:fast-safe-stringify@2.1.1/index.js",
+          "filter-obj": "https://ga.jspm.io/npm:filter-obj@1.1.0/index.js",
+          "hash.js": "https://ga.jspm.io/npm:hash.js@1.1.7/lib/hash.js",
+          "hey-listen": "https://ga.jspm.io/npm:hey-listen@1.0.8/dist/index.js",
+          "idb-keyval": "https://ga.jspm.io/npm:idb-keyval@6.2.1/dist/index.js",
+          "ieee754": "https://ga.jspm.io/npm:ieee754@1.2.1/index.js",
+          "inherits": "https://ga.jspm.io/npm:inherits@2.0.4/inherits_browser.js",
+          "isomorphic-unfetch": "https://ga.jspm.io/npm:isomorphic-unfetch@3.1.0/browser.js",
+          "js-sha3": "https://ga.jspm.io/npm:js-sha3@0.8.0/src/sha3.js",
+          "json-rpc-engine": "https://ga.jspm.io/npm:json-rpc-engine@6.1.0/dist/index.js",
+          "json-rpc-random-id": "https://ga.jspm.io/npm:json-rpc-random-id@1.0.1/index.js",
+          "keccak/js": "https://ga.jspm.io/npm:keccak@3.0.4/js.js",
+          "lit": "https://ga.jspm.io/npm:lit@3.1.0/index.js",
+          "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@4.0.4/lit-element.js",
+          "lit-html": "https://ga.jspm.io/npm:lit-html@3.1.2/lit-html.js",
+          "lit-html/": "https://ga.jspm.io/npm:lit-html@3.1.2/",
+          "lit/": "https://ga.jspm.io/npm:lit@3.1.0/",
+          "lodash.isequal": "https://ga.jspm.io/npm:lodash.isequal@4.5.0/index.js",
+          "lru-cache": "https://ga.jspm.io/npm:lru-cache@6.0.0/index.js",
+          "minimalistic-assert": "https://ga.jspm.io/npm:minimalistic-assert@1.0.1/index.js",
+          "motion": "https://ga.jspm.io/npm:motion@10.16.2/dist/main.es.js",
+          "ms": "https://ga.jspm.io/npm:ms@2.1.2/index.js",
+          "multiformats/basics": "https://ga.jspm.io/npm:multiformats@9.9.0/esm/src/basics.js",
+          "pify": "https://ga.jspm.io/npm:pify@3.0.0/index.js",
+          "pino": "https://ga.jspm.io/npm:pino@7.11.0/browser.js",
+          "preact": "https://ga.jspm.io/npm:preact@10.19.5/dist/preact.module.js",
+          "preact/hooks": "https://ga.jspm.io/npm:preact@10.19.5/hooks/dist/hooks.module.js",
+          "process": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/process-production.js",
+          "proxy-compare": "https://ga.jspm.io/npm:proxy-compare@2.5.1/dist/index.modern.js",
+          "qrcode": "https://ga.jspm.io/npm:qrcode@1.5.3/lib/browser.js",
+          "query-string": "https://ga.jspm.io/npm:query-string@7.1.3/index.js",
+          "quick-format-unescaped": "https://ga.jspm.io/npm:quick-format-unescaped@4.0.4/index.js",
+          "react": "https://ga.jspm.io/npm:react@18.2.0/index.js",
+          "readable-stream": "https://ga.jspm.io/npm:readable-stream@3.6.2/readable-browser.js",
+          "safe-buffer": "https://ga.jspm.io/npm:safe-buffer@5.2.1/index.js",
+          "scrypt-js": "https://ga.jspm.io/npm:scrypt-js@3.0.1/scrypt.js",
+          "semver": "https://ga.jspm.io/npm:semver@7.6.0/index.js",
+          "sha.js": "https://ga.jspm.io/npm:sha.js@2.4.11/index.js",
+          "split-on-first": "https://ga.jspm.io/npm:split-on-first@1.1.0/index.js",
+          "strict-uri-encode": "https://ga.jspm.io/npm:strict-uri-encode@2.0.0/index.js",
+          "string_decoder": "https://ga.jspm.io/npm:string_decoder@1.3.0/lib/string_decoder.js",
+          "superstruct": "https://ga.jspm.io/npm:superstruct@1.0.3/dist/index.mjs",
+          "tslib": "https://ga.jspm.io/npm:tslib@2.6.2/tslib.es6.mjs",
+          "uint8arrays": "https://ga.jspm.io/npm:uint8arrays@3.1.1/esm/src/index.js",
+          "uint8arrays/concat": "https://ga.jspm.io/npm:uint8arrays@3.1.1/esm/src/concat.js",
+          "uint8arrays/from-string": "https://ga.jspm.io/npm:uint8arrays@3.1.1/esm/src/from-string.js",
+          "uint8arrays/to-string": "https://ga.jspm.io/npm:uint8arrays@3.1.1/esm/src/to-string.js",
+          "unfetch": "https://ga.jspm.io/npm:unfetch@4.2.0/dist/unfetch.js",
+          "unstorage": "https://ga.jspm.io/npm:unstorage@1.10.1/dist/index.mjs",
+          "use-sync-external-store/shim/index.js": "https://ga.jspm.io/npm:use-sync-external-store@1.2.0/shim/index.js",
+          "util": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/util.js",
+          "util-deprecate": "https://ga.jspm.io/npm:util-deprecate@1.0.2/browser.js",
+          "valtio/react": "https://ga.jspm.io/npm:valtio@1.11.2/esm/react.mjs",
+          "valtio/react/utils": "https://ga.jspm.io/npm:valtio@1.11.2/esm/react/utils.mjs",
+          "valtio/utils": "https://ga.jspm.io/npm:valtio@1.11.2/esm/utils.mjs",
+          "valtio/vanilla": "https://ga.jspm.io/npm:valtio@1.11.2/esm/vanilla.mjs",
+          "valtio/vanilla/utils": "https://ga.jspm.io/npm:valtio@1.11.2/esm/vanilla/utils.mjs",
+          "xtend": "https://ga.jspm.io/npm:xtend@4.0.2/immutable.js",
+          "yallist": "https://ga.jspm.io/npm:yallist@4.0.0/yallist.js",
+          "zod": "https://ga.jspm.io/npm:zod@3.22.4/lib/index.mjs"
+        },
+        "https://ga.jspm.io/npm:@coinbase/wallet-sdk@3.9.1/_/Cb1FuK7s.js": {
+          "eventemitter3": "https://ga.jspm.io/npm:eventemitter3@5.0.1/index.mjs"
+        },
+        "https://ga.jspm.io/npm:@metamask/safe-event-emitter@2.0.0/": {
+          "events": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js"
+        },
+        "https://ga.jspm.io/npm:@metamask/safe-event-emitter@3.0.0/": {
+          "events": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js"
+        },
+        "https://ga.jspm.io/npm:@metamask/utils@5.0.2/": {
+          "buffer": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js"
+        },
+        "https://ga.jspm.io/npm:@walletconnect/environment@1.0.1/": {
+          "tslib": "https://ga.jspm.io/npm:tslib@1.14.1/tslib.es6.js"
+        },
+        "https://ga.jspm.io/npm:@walletconnect/heartbeat@1.2.1/": {
+          "events": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js",
+          "tslib": "https://ga.jspm.io/npm:tslib@1.14.1/tslib.es6.js"
+        },
+        "https://ga.jspm.io/npm:@walletconnect/jsonrpc-http-connection@1.0.7/": {
+          "events": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js"
+        },
+        "https://ga.jspm.io/npm:@walletconnect/jsonrpc-provider@1.0.13/": {
+          "events": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js"
+        },
+        "https://ga.jspm.io/npm:@walletconnect/logger@2.0.1/": {
+          "tslib": "https://ga.jspm.io/npm:tslib@1.14.1/tslib.es6.js"
+        },
+        "https://ga.jspm.io/npm:@walletconnect/modal-ui@2.6.2/": {
+          "lit": "https://ga.jspm.io/npm:lit@2.8.0/index.js",
+          "lit-html": "https://ga.jspm.io/npm:lit-html@2.8.0/lit-html.js",
+          "lit/": "https://ga.jspm.io/npm:lit@2.8.0/"
+        },
+        "https://ga.jspm.io/npm:@walletconnect/time@1.0.2/": {
+          "tslib": "https://ga.jspm.io/npm:tslib@1.14.1/tslib.es6.js"
+        },
+        "https://ga.jspm.io/npm:bn.js@5.2.1/": {
+          "buffer": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js"
+        },
+        "https://ga.jspm.io/npm:eth-json-rpc-filters@6.0.1/": {
+          "pify": "https://ga.jspm.io/npm:pify@5.0.0/index.js"
+        },
+        "https://ga.jspm.io/npm:eth-json-rpc-filters@6.0.1/_/b5cc7b52.js": {
+          "async-mutex": "https://ga.jspm.io/npm:async-mutex@0.2.6/index.mjs"
+        },
+        "https://ga.jspm.io/npm:json-rpc-engine@6.1.0/": {
+          "@metamask/safe-event-emitter": "https://ga.jspm.io/npm:@metamask/safe-event-emitter@2.0.0/index.js"
+        },
+        "https://ga.jspm.io/npm:keccak@3.0.4/": {
+          "buffer": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js"
+        },
+        "https://ga.jspm.io/npm:lit-element@3.3.3/": {
+          "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/reactive-element.js",
+          "lit-html": "https://ga.jspm.io/npm:lit-html@2.8.0/lit-html.js"
+        },
+        "https://ga.jspm.io/npm:lit@2.8.0/": {
+          "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/reactive-element.js",
+          "@lit/reactive-element/decorators/": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.3/decorators/",
+          "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.3.3/lit-element.js",
+          "lit-html": "https://ga.jspm.io/npm:lit-html@2.8.0/lit-html.js",
+          "lit-html/": "https://ga.jspm.io/npm:lit-html@2.8.0/"
+        },
+        "https://ga.jspm.io/npm:readable-stream@3.6.2/": {
+          "buffer": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js",
+          "events": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/events.js"
+        },
+        "https://ga.jspm.io/npm:safe-buffer@5.2.1/": {
+          "buffer": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/buffer.js"
+        }
+      }
+    }
+    </script>
+
+    <!-- ES Module Shims: Import maps polyfill for older browsers without import maps support (eg Safari 16.3) -->
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.8.3/dist/es-module-shims.js" crossorigin="anonymous"></script>
 db_schema:
   wallet_chains:
     client: full
