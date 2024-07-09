@@ -13,8 +13,7 @@ from anvil.js.window import ethers
 createWeb3Modal = import_from("@web3modal/ethers5").createWeb3Modal
 defaultConfig=import_from("@web3modal/ethers5").defaultConfig
 ethers = import_from("ethers").ethers
-pulsechain_url = "https://rpc.pulsechain.com"
-ethereum_url = "https://eth-mainnet.g.alchemy.com/v2/CjAeOzPYt5r6PmpSkW-lL1NL7qfZGzIY"
+
 class WalletConnect(WalletConnectTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
