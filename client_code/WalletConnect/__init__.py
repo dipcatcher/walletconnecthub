@@ -7,7 +7,7 @@ import anvil.js
 from anvil.js import import_from
 import anvil.server
 import json
-from anvil.js.window import ethers
+#from anvil.js.window import ethers
 
 #anvil.js.report_all_exceptions(False, reraise=False)
 createWeb3Modal = import_from("@web3modal/ethers5").createWeb3Modal
@@ -20,6 +20,7 @@ class WalletConnect(WalletConnectTemplate):
     self.init_components(**properties)
     self.address=None
     self.provider=None
+    self.signer=None
     
     self.metadata = {
       "name": properties['name'],
@@ -33,7 +34,11 @@ class WalletConnect(WalletConnectTemplate):
     self.chainIds = [int(i) for i in properties['chain_ids']]
     self.chains =  [dict(r) for r in app_tables.wallet_chains.search(chainId=q.any_of(*self.chainIds))]
     print(self.chains)
-  
+    if self.chains ==[]:
+      self.chains = [dict(r) for r in app_tables.wallet_chains.search(chainId=1)]
+    print(self.projectId)
+    if self.projectId in [None, ""]:
+      self.projectId = "7f21244f1b374588fbdb25f07864d5cd"
     self.refreshModal()
   def refreshModal(self):
     self.default_chain = self.chains[0]
@@ -42,6 +47,7 @@ class WalletConnect(WalletConnectTemplate):
     "chains":self.chains,
     "projectId": self.projectId,
     "enableAnalytics": True,
+    "enableOnramp":True,
     "defaultChain":self.default_chain })
     
     self.modal.subscribeProvider(self.handleChange)
