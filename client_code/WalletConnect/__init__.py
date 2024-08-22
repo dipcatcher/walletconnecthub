@@ -20,6 +20,7 @@ class WalletConnect(WalletConnectTemplate):
     self.init_components(**properties)
     self.address=None
     self.provider=None
+    self.signer=None
     
     self.metadata = {
       "name": properties['name'],
