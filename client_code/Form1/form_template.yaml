@@ -1,5 +1,5 @@
-container:
-  type: HtmlTemplate
-  properties: {html: <w3m-button balance="show" disabled="false"/>}
 components: []
+container:
+  properties: {html: <w3m-button balance="show" disabled="false"/>}
+  type: HtmlTemplate
 is_package: true
